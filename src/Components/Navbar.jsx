@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/Navbar.css';
 import { FaSearch } from 'react-icons/fa';
 
-const Navabr = () => {
+const Navbar = () => {
     return (
         <div className='Navbar'>
             <div className='navbar-top'>
@@ -34,4 +34,4 @@ const Navabr = () => {
     )
 }
 
-export default Navabr
+export default Navbar

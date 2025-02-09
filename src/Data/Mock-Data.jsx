@@ -1,4 +1,4 @@
-[
+export const blogData = [
     {
         "id": 3,
         "title": "Making wearable medical devices more patient-friendly with Professor Esther Rodriguez-Villegas from Acurable",

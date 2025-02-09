@@ -1,11 +1,11 @@
 import './App.css';
-import Navabr from './Components/Navabr';
 import Home from './Components/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //Page Container
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <div className='App-container'>
       <CssBaseline />
       <BrowserRouter>
-        <Navabr />
+        <Navbar />
         <Container maxWidth="lg">
           <Routes>
             <Route path="/" element={<Home />}>
