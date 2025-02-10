@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Styles/Navbar.css';
 import { FaSearch } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { searchBlog } from '../Redux/BlogSlice';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+    const [inputText, setInputText] = useState('');
+    const dispatch = useDispatch();
+    const { searched } = useSelector(store => store.blog)
+
+    const searchedBlog = (e) => {
+        e.preventDefault();
+        dispatch(searchBlog(inputText))
+        console.log(searched)
+    }
+
     return (
         <div className='Navbar'>
             <div className='navbar-top'>
@@ -11,17 +25,23 @@ const Navbar = () => {
                 </div>
                 <div className='navbar-pages'>
                     <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>About</li>
-                        <li>Blogs</li>
-                        <li>Contact</li>
+                        <li onClick={() => navigate('/')}>Home</li>
+                        <li onClick={() => navigate('/services')}>Services</li>
+                        <li onClick={() => navigate('/about')}>About</li>
+                        <li onClick={() => navigate('/blogs')}>Blogs</li>
+                        <li onClick={() => navigate('/contact')}>Contact</li>
                     </ul>
                 </div>
 
                 <div className='navbar-subs'>
-                    <form className='navbar-form'>
-                        <input type="text" placeholder='Search ...' />
+                    <form
+                        onSubmit={searchedBlog}
+                        className='navbar-form'>
+                        <input
+                            value={inputText}
+                            onChange={(e) => setInputText(e.target.value)}
+                            type="text"
+                            placeholder='Search ...' />
                         <FaSearch />
                     </form>
                     <button>
