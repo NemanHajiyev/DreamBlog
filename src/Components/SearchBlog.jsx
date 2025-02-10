@@ -15,6 +15,16 @@ const SearchBlog = () => {
         dispatch(blogDetail(id));
         navigate('/blog-detail');
     }
+
+    if (searched.length === 0) {
+        return (
+            <div className="not-found">
+                <h1>No results found</h1>
+                <p>Try searching for something else.</p>
+            </div>
+        )
+    }
+
     return (
         <div className='search-container'>
             <div className='search-blog' >

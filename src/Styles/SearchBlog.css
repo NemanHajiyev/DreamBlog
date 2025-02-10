@@ -12,3 +12,19 @@
     display: flex;
     justify-content: center;
 }
+
+.not-found {
+    text-align: center;
+    margin-top: 50px;
+    min-height: 50vh;
+}
+
+.not-found h1 {
+    font-size: 24px;
+    color: #ff4c4c;
+}
+
+.not-found p {
+    font-size: 18px;
+    color: #666;
+}
