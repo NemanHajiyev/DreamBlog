@@ -7,14 +7,13 @@ import { searchBlog } from '../Redux/BlogSlice';
 
 const Navbar = () => {
     const navigate = useNavigate();
-    const [inputText, setInputText] = useState('');
+    const [inputText, setInputText] = useState();
     const dispatch = useDispatch();
-    const { searched } = useSelector(store => store.blog)
 
     const searchedBlog = (e) => {
         e.preventDefault();
         dispatch(searchBlog(inputText))
-        console.log(searched)
+        navigate('/search-blog')
     }
 
     return (
@@ -28,7 +27,6 @@ const Navbar = () => {
                         <li onClick={() => navigate('/')}>Home</li>
                         <li onClick={() => navigate('/services')}>Services</li>
                         <li onClick={() => navigate('/about')}>About</li>
-                        <li onClick={() => navigate('/blogs')}>Blogs</li>
                         <li onClick={() => navigate('/contact')}>Contact</li>
                     </ul>
                 </div>
@@ -50,7 +48,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='navbar-center'>
-                <h1>Welocome To Our Blog</h1>
+                <h1>Welcome To Our Blog</h1>
                 <p>Discover insightful articles, expert tips, and the latest trends on a variety of topics.
                     Whether you're here for inspiration, knowledge, or just a good read, we've got something for everyone.
                     Stay curious and explore our latest posts! </p>

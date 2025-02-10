@@ -432,18 +432,6 @@ export const blogData = [
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 39,
-        "title": "Dry Studio’s Black Diamond 75 is a gaming keyboard that actually looks good",
-        "image": "https://techcrunch.com/wp-content/uploads/2023/10/15.jpg?w=430&h=230&crop=1",
-        "category": "Gadgets",
-        "author": "Carly Page",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The Arc browser is “finally” launching its AI-powered features under the “Arc Max” moniker. The Browser Company is using a combination of OpenAI’s GPT-3.5 and Anthropi...",
-        "tags": ["Startups", "Writing"]
-    },
-    {
         "id": 40,
         "title": "DoorDash tests a feature that rewards users for dining out, not ordering in",
         "image": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1232015093.jpg?w=430&h=230&crop=1",
@@ -504,7 +492,7 @@ export const blogData = [
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 45,
+        "id": 39,
         "title": "Sparx wants to do for enterprise what Truebill did for consumer recurring bills",
         "image": "https://techcrunch.com/wp-content/uploads/2023/10/SaaS-final.png?w=430&h=230&crop=1",
         "category": "Fintech",
@@ -540,7 +528,7 @@ export const blogData = [
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 47,
+        "id": 84,
         "title": "Cloaked manages your logins with proxy emails, phone numbers and a built-in password manager",
         "image": "https://techcrunch.com/wp-content/uploads/2023/09/Cloaked-Privacy-2.jpeg?w=430&h=230&crop=1",
         "category": "Apps",
@@ -552,7 +540,7 @@ export const blogData = [
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 47,
+        "id": 85,
         "title": "Unitary AI picks up $15M for its multimodal approach to video content moderation",
         "image": "https://techcrunch.com/wp-content/uploads/2023/10/Screenshot-2023-10-03-at-01.44.37.png?w=430&h=230&crop=1",
         "category": "Health",
@@ -564,23 +552,11 @@ export const blogData = [
         "tags": ["Startups", "Writing"]
     },
     {
-        "id": 47,
+        "id": 86,
         "title": "Tesla Autopilot arbitration win could set legal benchmark in auto industry",
         "image": "https://techcrunch.com/wp-content/uploads/2023/06/GettyImages-1494766819.jpg?w=430&h=230&crop=1",
         "category": "Tech",
         "author": "Natasha Lomas",
-        "authorPic": "author1.jpg",
-        "published_date": "2023-10-01",
-        "reading_time": "6 minutes",
-        "content": "The Arc browser is “finally” launching its AI-powered features under the “Arc Max” moniker. The Browser Company is using a combination of OpenAI’s GPT-3.5 and Anthropi...",
-        "tags": ["Startups", "Writing"]
-    },
-    {
-        "id": 48,
-        "title": "Google Pixel Event 2023: Everything you need to know about Pixel 8, Pixel Watch 2, Pixel Buds Pro, Android 14",
-        "image": "https://techcrunch.com/wp-content/uploads/2023/10/Screen-Shot-2023-10-04-at-9.06.01-AM.png?w=430&h=230&crop=1",
-        "category": "Gadgets",
-        "author": "Christine Hall",
         "authorPic": "author1.jpg",
         "published_date": "2023-10-01",
         "reading_time": "6 minutes",
