@@ -113,3 +113,19 @@
         color: rgb(255, 115, 0);
 
     }
+
+    @media screen and (max-width: 1024px) {
+        .Navbar {
+            width: 100%;
+        }
+
+        .navbar-subs {
+            width: 32%;
+        }
+
+        .navbar-center {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {}

@@ -26,7 +26,7 @@ const Home = () => {
         if (ctg === "All") {
             dispatch(categorySelect(""));
         } else {
-            dispatch(categorySelect(ctg)); s
+            dispatch(categorySelect(ctg));
         }
     }
 

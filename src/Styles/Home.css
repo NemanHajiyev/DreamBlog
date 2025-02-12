@@ -1,6 +1,6 @@
 .Home {
     width: 100%;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-top: 3rem;
 }
 
@@ -98,10 +98,8 @@
 .paginate ul {
     display: flex;
     list-style: none;
-    padding: 0;
     gap: 8px;
     background: #f8f9fa;
-    padding: 10px 15px;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -128,4 +126,20 @@
     color: white;
     border: 1px solid #0056b3;
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+    .home-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-conatiner {
+        flex-direction: column;
+    }
+
+    .paginate {
+        width: 50%;
+    }
 }

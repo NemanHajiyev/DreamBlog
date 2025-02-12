@@ -25,24 +25,22 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div className='App-container'>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Navbar />
       <CssBaseline />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Navbar />
-        <Container maxWidth="lg">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path='/services' element={<ServicesPage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/contact' element={<ContactPage />} />
-            <Route path='/blog-detail' element={<BlogDetails />} />
-            <Route path='/search-blog' element={<SearchBlog />} />
-          </Routes>
-        </Container>
-        <Footer />
-      </BrowserRouter>
-    </div>
+      <Container maxWidth="lg">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/services' element={<ServicesPage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/blog-detail' element={<BlogDetails />} />
+          <Route path='/search-blog' element={<SearchBlog />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
