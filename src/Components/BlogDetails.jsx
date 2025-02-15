@@ -1,9 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import '../Styles/BlogDetail.css';
+import { useNavigate } from 'react-router-dom';
 
 const BlogDetails = () => {
     const { detail } = useSelector(store => store.blog);
+    const navigate = useNavigate();
 
     return (
         <div className='detail-container'>
@@ -29,6 +31,7 @@ const BlogDetails = () => {
                     </p>
                 </div>
             ))}
+            <button className='back-btn' onClick={() => navigate('/')}>Back Home</button>
         </div>
     );
 };
