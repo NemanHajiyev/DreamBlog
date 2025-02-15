@@ -56,3 +56,16 @@
     font-size: 14px;
     color: #ccc;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        width: 100%;
+
+    }
+
+    .footer-content {
+        padding: 0px;
+        width: 100%;
+        flex-direction: column;
+    }
+}

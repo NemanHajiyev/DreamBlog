@@ -29,7 +29,7 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/services' element={<ServicesPage />} />

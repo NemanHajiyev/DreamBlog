@@ -139,7 +139,23 @@
         flex-direction: column;
     }
 
+    .home-right {
+        width: 100%;
+    }
+
+    .home-items {
+        width: 100%;
+    }
+
     .paginate {
-        width: 50%;
+        width: 100%;
+        overflow-x: auto;
+        padding: 10px 0;
+        justify-content: flex-start;
+    }
+
+    .paginate ul {
+        gap: 5px;
+        padding: 0 10px;
     }
 }
