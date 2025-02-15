@@ -30,12 +30,13 @@ const Navbar = () => {
         e.preventDefault();
         dispatch(searchBlog(inputText));
         navigate('/search-blog');
+        setInputText('')
     };
 
     return (
         <div className="Navbar">
             <div className="navbar-top">
-                <div className="navbar-logo">
+                <div onClick={() => navigate('/')} className="navbar-logo">
                     <h1>Dream<span>Blog</span></h1>
                 </div>
                 <div className="navbar-pages">
